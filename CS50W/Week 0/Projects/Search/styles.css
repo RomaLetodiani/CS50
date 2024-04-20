@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* styles.css */
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+header {
+  background-color: #171717;
+  padding: 10px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s easy;
+  color: #4285f4;
+}
+
+main {
+  background-color: #2f2f2f;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.search-button,
+.lucky-button,
+.advanced-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4285f4;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+.lucky-button {
+  background-color: #ea4335;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+.advanced-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
