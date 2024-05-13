@@ -26,16 +26,11 @@ int main(void)
     float index = 0.0588 * L - 0.296 * S - 15.8;
 
     // Print the grade level
-    if (index < 1)
-    {
+    if (index < 1) {
         printf("Before Grade 1\n");
-    }
-    else if (index >= 16)
-    {
+    } else if (index >= 16) {
         printf("Grade 16+\n");
-    }
-    else
-    {
+    } else {
         printf("Grade %.0f\n", round(index));
     }
 }
@@ -46,8 +41,7 @@ int count_letters(char *text)
     int count = 0;
     for (int i = 0, len = strlen(text); i < len; i++)
     {
-        if (isalpha(text[i]))
-        {
+        if (isalpha(text[i])) {
             count++;
         }
     }
@@ -60,8 +54,7 @@ int count_words(char *text)
     int count = 0;
     for (int i = 0, len = strlen(text); i < len; i++)
     {
-        if (isspace(text[i]))
-        {
+        if (isspace(text[i])) {
             count++;
         }
     }
@@ -74,8 +67,7 @@ int count_sentences(char *text)
     int count = 0;
     for (int i = 0, len = strlen(text); i < len; i++)
     {
-        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
-        {
+        if (text[i] == '.' || text[i] == '!' || text[i] == '?') {
             count++;
         }
     }
